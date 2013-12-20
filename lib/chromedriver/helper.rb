@@ -9,8 +9,8 @@ module Chromedriver
     DOWNLOAD_URL = "http://code.google.com/p/chromedriver/downloads/list"
 
     def run *args
-      download
-      exec binary_path, *args
+      # download
+      exec 'chromedriver', *args
     end
 
     def download hit_network=false
